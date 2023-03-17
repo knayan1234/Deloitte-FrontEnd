@@ -1,16 +1,15 @@
-const url = 'https://jsonplaceholder.typicode.com/posts';
 $(document).ready(function () {
+    const url = 'https://jsonplaceholder.typicode.com/posts';
+    title=localStorage.getItem("title");
+  
     $.get(url, function (data) {
-        // data.forEach(element => {
-            for(i=0;i<)
-                // document.getElementsByClassName('content').innerHTML=console.log(' ' +element.title+"<br>");
-            // $(".content").text(element.title);
+       data.forEach((element) => {
 
-            // Object.entries(element).forEach(hi = ([key,value])=>{
-            //     $(".content").text(value);
-            // });
-                      
-        });
-    })
+          if(element.title===title)
+          {
+              $(".content").append(element.body);
+          }
+         });
+    });
 
 });
