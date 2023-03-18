@@ -6,22 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="allblogs.js">
+    <script src="randomblog.js">
     </script>
     <style>
-      
-       body{
+         body{
             margin:0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: rgb(44, 44, 45);
             z-index:1;
             visibility:visible;
-            
-        }
-        .main{
-            position:relative;
-            text-align: center;
-            z-index: 1;
             
         }
         .topnav{
@@ -30,6 +23,7 @@
             display:flex;
             align-items: center;
             position: sticky;
+           
         }
         .topnav a{
             float:left;
@@ -51,39 +45,24 @@
             margin: 0;
             padding:0px;
         }
-        .heading{
-            font-size: 70px;
-            font-family: system-ui;
-            font-weight: lighter;
-            color:rgb(55, 55, 189);
-            position:top;
-            margin-top: 5px;
-        }
-        .content{
-            z-index: -1;
-            position:absolute;
-        
-        }
     </style>
-   </head>
-    <body>
-        <div class="main">
-          <div class="topnav">
-            <a href="index.html"><img src="Deloitte-Logo.png" height="50" width="100"></a>
-            <a href="allblogs.html" class="active">All Blogs</a>
-            <a href="#home">Random Blog</a>
-            <a href="#home">Write Blog</a>
-          </div>
-          <div class="blog">
-               <h1 class="heading">Deloitte Blog List</h1><hr>
-               <div class="content">
+</head>
+<body>
+    <div class="main">
+      <div class="topnav">
+        <a href="index.html"><img src="Deloitte-Logo.png" height="50" width="100"></a>
+        <a href="allblogs.html">All Blogs</a>
+        <a href="randomblog.html">Random Blog</a>
+        <a href="write.html">Write Blog</a>
+      </div>
+      <div class="content">
 
-               </div>
-               <!-- <div class="realcontent">
-                
-                </div> -->
-          </div>
-        </div>
-     </body>
-    
-</html>
+      </div>
+      <div class="realcontent">
+       
+       </div>
+    </div>
+ </body>
+
+ </html>
+      
