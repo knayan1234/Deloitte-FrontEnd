@@ -13,7 +13,7 @@ $(document).ready(function () {
        data.forEach((element,index) => {
        setTimeout(()=>{
           $(".content").empty();
-          $(".content").append(`<p onclick="settitle('${element.title}')">${element.title}</p><br>`);},
+          $(".content").append(`<p onclick="settitle('${element.title}')">${element.body}</p><br>`);},
           
           index*interval);
           });

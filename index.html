@@ -25,10 +25,10 @@
      }
      .topnav{
          overflow: hidden;
-         background-color:black;
+         background-color:rgb(30, 29, 29);
          display:flex;
          align-items: center;
-         position: sticky;
+         /* position: sticky; */
          /* padding: 5px 20px; */
      }
      .topnav a{
@@ -42,10 +42,10 @@
         margin-bottom: 0;
      }
      .topnav a:hover{
-         background-color: rgb(21, 21, 20);
-         color:rgb(215, 200, 200);
-         cursor: grab;
-         border-radius: 2px;
+         background-color: rgb(180, 129, 8);
+         color:white;
+         cursor: pointer;
+         border-radius: 5px;
      }
      .topnav a img{
          margin: 0;
@@ -57,15 +57,35 @@
          background-size: auto;
          overflow:auto;
          background-position: center;
+         background-attachment: fixed;
          
      }
      .content{
-         padding-top: 170px;
+         padding-top:150px;
+         color: black;
+         text-align:left;
      }
      #heading{
-         font-size: xxx-large;
-         font-family: system-ui;
-         font-weight: lighter;
+         font-size: 4.2em;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         /* color: rgb(63, 145, 56); */
+         /* padding-top: 10; */
+         text-shadow: 2px 1px rgb(203, 186, 186);
+         
+        
+     }
+
+     .read{
+        font-size: x-large; 
+        text-decoration: none;
+        text-align: center;
+        /* background-color: rgb(55, 54, 54); */
+       backface-visibility: visible;
+     }
+
+     .read:hover{
+        /* font-style: inherit; */
+        color:red;
      }
 
  </style>
@@ -79,11 +99,11 @@
      <a href="write.html">Write Blog</a>
    </div>
    <div class="bg">
-     <img src="deloitte-offices-bangalore-1.jpg" height="500px" width="100%">
+     <img src="deloitte-offices-bangalore-1.jpg" height="527px" width="100%">
      <div class="content">
      <h1 id="heading">Deloitte Blogs App</h1>
-     <p>Welcome to Deloitte Angular JS application 13 Feb 2023</p>
-     <p><a href="#">Read Blog_posts...</a></p>
+     <p style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: bold; color: rgb(18, 200, 255); ">Welcome to Deloitte Angular JS application 13 Feb 2023</p>
+     <p class="read"><a href="allblogs.html" >Read Blog_posts...</a></p>
    </div>
  </div>
 </div>
